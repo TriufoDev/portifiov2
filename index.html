@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mateus Triunfo - Desenvolvedor Full Stack em Pouso Alegre, MG. Especialista em desenvolvimento web moderno, React, Node.js e soluções personalizadas. Estudante de Engenharia de Software.">
+    <meta name="keywords" content="desenvolvedor full stack, desenvolvedor web, programador pouso alegre, react developer, node.js, desenvolvedor javascript, engenheiro de software, Mateus Triunfo, MT.dev, desenvolvimento web pouso alegre, criação de sites">
+    <meta name="author" content="Mateus Triunfo">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="BR-MG">
+    <meta name="geo.placename" content="Pouso Alegre">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mtdev.com/">
+    <meta property="og:title" content="Mateus Triunfo - Desenvolvedor Full Stack | <TRIUNFO.DEV/>">
+    <meta property="og:description" content="Desenvolvedor Full Stack especializado em criar soluções web modernas e inovadoras. React, Node.js, TypeScript e mais.">
+    <meta property="og:image" content="https://mtdev.com/mateus.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mtdev.com/">
+    <meta property="twitter:title" content="Mateus Triunfo - Desenvolvedor Full Stack | <TRIUNFO.DEV/>">
+    <meta property="twitter:description" content="Desenvolvedor Full Stack especializado em criar soluções web modernas e inovadoras.">
+    <meta property="twitter:image" content="https://mtdev.com/mateus.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mtdev.com/">
+    
+    <!-- Theme Color for browsers -->
+    <meta name="theme-color" content="#0a0e27">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png"> <!-- Opcional: Crie uma imagem 180x180 -->
+    <link rel="manifest" href="manifest.json">
+    
+    <title>Mateus Triunfo - Desenvolvedor Full Stack | <TRIUNFO.DEV/> - Pouso Alegre, MG</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mateus Triunfo",
+        "url": "https://mtdev.com",
+        "image": "https://mtdev.com/mateus.png",
+        "jobTitle": "Desenvolvedor Full Stack",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "MT Automação"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pouso Alegre",
+            "addressRegion": "MG",
+            "addressCountry": "BR"
+        },
+        "email": "triunfo.ti121@gmail.com",
+        "telephone": "+5535910181807",
+        <!-- IMPORTANTE: Substitua pelas suas URLs reais do GitHub e LinkedIn -->
+        "sameAs": [
+            "https://github.com/",
+            "https://linkedin.com/"
+        ],
+        "knowsAbout": [
+            "Desenvolvimento Web",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "TypeScript",
+            "Full Stack Development"
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                TRIUNFO.DEV
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#experience" class="nav-link">Experiência</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section com Parallax -->
+    <section class="hero" id="home">
+        <div class="parallax-bg" id="parallaxBg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <p class="hero-greeting">Olá, eu sou</p>
+                <h1 class="hero-name">Mateus Triunfo</h1>
+                <h2 class="hero-title">
+                    <span class="typing-text">Desenvolvedor Full Stack</span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Engenheiro de Software apaixonado por criar experiências digitais 
+                    incríveis e soluções inovadoras para a web.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-secondary">Entrar em Contato</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com" target="_blank" rel="noopener" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="mailto:triunfo.ti121@gmail.com" class="social-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image fade-in">
+                <div class="image-parallax" id="heroImageParallax">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-image">
+                            <img src="mateus.png" alt="Mateus Triunfo" loading="lazy">
+                        </div>
+                        <div class="profile-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p class="lead">
+                        Desenvolvedor Full Stack com formação técnica em Informática e 
+                        atualmente cursando <strong>Engenharia de Software</strong>.
+                    </p>
+                    <p>
+                        Minha jornada na tecnologia começou cedo, e desde então venho 
+                        aprimorando minhas habilidades em desenvolvimento web, com foco 
+                        em criar aplicações modernas, escaláveis e com excelente experiência 
+                        do usuário.
+                    </p>
+                    <p>
+                        Tenho experiência tanto no front-end quanto no back-end, trabalhando 
+                        com tecnologias como React, Node.js, TypeScript, e bancos de dados 
+                        relacionais e NoSQL. Sempre busco aprender novas tecnologias e 
+                        metodologias para entregar as melhores soluções.
+                    </p>
+                    
+                    <div class="education-cards">
+                        <div class="education-card reveal">
+                            <div class="card-icon">🎓</div>
+                            <h3>Engenharia de Software</h3>
+                            <p>Em andamento</p>
+                        </div>
+                        <div class="education-card reveal">
+                            <div class="card-icon">💻</div>
+                            <h3>Técnico em Informática</h3>
+                            <p>Concluído</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Habilidades</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3>Front-end</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript / TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Back-end</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Express.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL / NoSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 83%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">APIs REST</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal">
+                    <h3>Ferramentas & Outros</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma / UI Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Metodologias Ágeis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Projetos</h2>
+            
+            <div class="projects-grid">
+                <!-- Sítio Triunfo -->
+                <article class="project-card reveal" data-project="sitio">
+                    <div class="project-image">
+                        <img src="assets/project-sitio.jpg" alt="Projeto Sítio Triunfo" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-link">Ver Detalhes</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sítio Triunfo</h3>
+                        <p>Landing page para um sítio de aluguel para eventos, com galeria de fotos e informações de contato.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ponto V2 -->
+                <article class="project-card reveal" data-project="ponto">
+                    <div class="project-image">
+                        <img src="assets/project-ponto.jpg" alt="Projeto Sistema de Ponto" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-link">Ver Detalhes</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema de Ponto V2</h3>
+                        <p>Aplicação para registro de ponto, com cálculo de horas, banco de horas e geração de relatórios.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Carol Coxinhas -->
+                <article class="project-card reveal" data-project="carol">
+                    <div class="project-image">
+                        <img src="assets/project-carol.jpg" alt="Projeto Carol Coxinhas" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-link">Ver Detalhes</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cardápio Digital</h3>
+                        <p>Cardápio digital interativo para uma franquia de salgados, com visualização de produtos e preços.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Click Fotos -->
+                <article class="project-card reveal" data-project="clickfotos">
+                    <div class="project-image">
+                        <img src="assets/project-clickfotos.jpg" alt="Projeto Click Fotos" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-link">Ver Detalhes</div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Galeria Click Fotos</h3>
+                        <p>Plataforma para fotógrafos exibirem seus portfólios com galerias e categorias.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Experiência</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Presente</span>
+                        <h3>Desenvolvedor Full Stack</h3>
+                        <h4>MT Automação</h4>
+                        <p>
+                            Desenvolvimento de aplicações web completas, desde o design até a implementação,
+                            incluindo automação comercial, sites institucionais e integrações com WhatsApp.
+                        </p>
+                        <ul>
+                            <li>Desenvolvimento de sistemas web responsivos e modernos</li>
+                            <li>Integração de APIs e sistemas de terceiros</li>
+                            <li>Otimização de performance e SEO</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3>Desenvolvedor Front-end</h3>
+                        <h4>Freelancer</h4>
+                        <p>
+                            Criação de interfaces modernas e responsivas para diversos clientes,
+                            com foco em UX/UI e performance.
+                        </p>
+                        <ul>
+                            <li>Desenvolvimento de landing pages de alta conversão</li>
+                            <li>Implementação de designs do Figma para código</li>
+                            <li>Manutenção e atualização de sites existentes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2022</span>
+                        <h3>Técnico em Informática</h3>
+                        <h4>Formação Técnica</h4>
+                        <p>
+                            Conclusão do curso técnico com foco em desenvolvimento web,
+                            banco de dados e redes de computadores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Entre em Contato</h2>
+            <p class="section-subtitle reveal">Vamos trabalhar juntos?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:triunfo.ti121@gmail.com">triunfo.ti121@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Telefone</h3>
+                            <a href="tel:+5535910181807">+55 (35) 91018-1807</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Localização</h3>
+                            <p>Pouso Alegre, MG - Jardim Aeroporto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" required placeholder=" " id="name">
+                        <label for="name">Nome</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" required placeholder=" " id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" required placeholder=" " id="subject">
+                        <label for="subject">Assunto</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" required placeholder=" " rows="5" id="message"></textarea>
+                        <label for="message">Mensagem</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    TRIUNFO.DEV
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p>© 2025 Mateus Triunfo. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:triunfo.ti121@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Projetos -->
+    <div class="project-modal" id="projectModal">
+        <div class="project-modal-overlay" id="projectModalOverlay"></div>
+        <div class="project-modal-content">
+            <button class="project-modal-close" id="projectModalClose" aria-label="Fechar modal">&times;</button>
+            <div class="project-modal-body">
+                <!-- Conteúdo será injetado via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5535910181807?text=Olá%20Mateus!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.923 0-7.435 6.050-13.485 13.485-13.485s13.485 6.050 13.485 13.485c0 7.435-6.050 13.485-13.485 13.485zM21.960 18.241c-0.214-0.107-1.268-0.626-1.464-0.697s-0.339-0.107-0.482 0.107c-0.143 0.214-0.554 0.697-0.679 0.84s-0.25 0.161-0.464 0.054c-0.214-0.107-0.902-0.333-1.719-1.060-0.635-0.567-1.064-1.268-1.189-1.482s-0.013-0.329 0.094-0.436c0.096-0.096 0.214-0.25 0.321-0.375s0.143-0.214 0.214-0.357c0.071-0.143 0.036-0.268-0.018-0.375s-0.482-1.161-0.661-1.589c-0.174-0.418-0.351-0.362-0.482-0.369-0.125-0.006-0.268-0.007-0.411-0.007s-0.375 0.054-0.571 0.268c-0.196 0.214-0.75 0.733-0.75 1.786s0.768 2.071 0.875 2.214c0.107 0.143 1.508 2.304 3.654 3.232 0.509 0.221 0.908 0.353 1.218 0.451 0.512 0.162 0.978 0.139 1.346 0.084 0.411-0.061 1.268-0.518 1.446-1.018s0.179-0.929 0.125-1.018c-0.054-0.089-0.196-0.143-0.411-0.25z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
